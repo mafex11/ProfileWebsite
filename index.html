@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Creating a single page website</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Sudhanshu Pandit
+          <div class="contact_info">
+            <img src="images.png\envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          sudhanshuk1104@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="images.png\phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +91 1234567890
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#Skills">Skills</a>
+          <a class="topmenu" href="#Projects">Projects</a>
+          <a class="topmenu" href="#Recommendations">Recommendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+    </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="images.png/about me.png" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Sudhanshu Pandit! 
+          </h1>
+          <p>
+             I am currently studying  1st year and I am  pusrusing my majors in computer science .
+             I have been into web development now almost for 1 months now.
+             Currently i am enough familiar with HTML,CSS and JavaScript to work with mini projects.
+             I am eager to develop my skills which will be helpful for me in future.
+        </p>
+      </div>
+    </section>
+    
+    <!-- Skills -->
+    <section id="Skills">
+      <h2>Skills:</h2>
+      <div style="clear:both;"></div>
+      
+      <div class="all_skills">
+          <div class="skill">
+          <img src="images.png/html5.png"/>
+          <h6>HTML</h6>
+          <p>1 months experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="images.png/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>2 weeks experience</p>
+        </div>  
+        
+        
+        <div class="skill">
+          <img src="images.png/java.png"/>
+          <h6>Java</h6>
+          <p>1 months experience</p>
+        </div>  
+
+        
+        <div class="skill">
+          <img src="images.png/node.png"/>
+          <h6>Node JS</h6>
+          <p>1 month experience</p>
+        </div>  
+
+        
+        <div class="skill">
+          <img src="images.png/react.png"/>
+          <h6>React JS</h6>
+          <p>2 weeks experience</p>
+        </div>  
+        <!-- Add more skills here -->
+
+        
+    </div>
+</section>
+
+<!-- Projects -->
+<section class="projects" id="Projects">
+    <h2>
+        Projects
+    </h2>
+    <div style="clear:both;"></div>
+    
+        <div id="projects-container" class="projects-container">
+            <div class="project-card">
+            <h3>Defund</h3>
+            <ul>
+                <li>Developed an web3 Dapp's front-end using HTML,CSS,Javascript</li>
+            </ul>
+            <ul>
+                <li>Crowd funding decentralized dapp for anonymous donations and protection.</li>
+            </ul>
+        </div>
+          <hr>
+          <div class="project-card">
+            <h3>Object detection</h3>
+            <ul>
+                <li>Developed a simple python program to detect objects and identify them.</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="project-card">
+            <h3>face recognition program </h3>
+            <ul>
+              <li>developed a python program to recognize human emotion.</li>
+            </ul>
+          </div>
+    </div>
+</section>
+<div style="clear:both;"></div>
+
+<!-- Recommendations -->
+<section id="Recommendations">
+    <h2>Recommendations</h2>
+    <div style="clear:both;"></div>
+    <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+            <span>&#8220;</span>
+            Sudhanshu is incredibly smart and has such a knack for grasping web development concepts quickly! It's truly impressive how he can save so much time by understanding things rapidly. His ability to learn beyond the basics and apply those advanced concepts for our company's benefit is outstanding. We're lucky to have him on our team, and I'm constantly inspired by his dedication to learning and innovation.
+            <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+            <span>&#8220;</span>
+            Sudhanshu is a web development genius with an unparalleled ability to find innovative solutions to any challenge. His constant thirst for knowledge, exceptional communication skills, and infectious enthusiasm make him a standout team player. Working with Sudhanshu is an absolute pleasure, and his presence uplifts and inspires us all. He's truly a force to be reckoned with, and I have no doubt that he will continue to achieve great things in the future.
+            <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+            <span>&#8220;</span>
+            Sudhanshu's work ethic is truly commendable. He consistently goes above and beyond to ensure that projects are delivered with the utmost quality and precision. Whether it's meeting tight deadlines or tackling complex challenges, Sudhanshu remains focused and determined. His dedication to excellence sets a shining example for the entire team, and I'm continually impressed by his unwavering commitment to producing outstanding results.             <span>&#8221;</span>
+        </div>
+    </div>
+</section>
+
+<!-- Recommendation Form -->
+<section id="contact">
+    <div class="flex_center">
+        <fieldset>
+            <legend class="introduction">Leave a Recommendation</legend>          
+            <input type="text" placeholder="Name (Optional)"> <br/>
+            <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+            <div class="flex_center">
+                <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+            </div>
+        </fieldset>
+    </div>
+    </section>
+    
+    <div class="iconbutton">
+        <a href="#home">
+          <!--Add the code here for the logo to appear and the icon to be actionable-->
+         
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </a>
+    </div>
+    
+    <div class="popup" id="popup" class="flex_center">
+        <img src="images.png/checkmark--outline.svg"/>
+        <h3>Thanks for leaving a recommendation !</h3>
+        <button >Ok</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
